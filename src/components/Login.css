@@ -1,0 +1,97 @@
+.login-form {
+  max-width: 360px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-form button:hover {
+  background-color: #e25a4f;
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.login-form span {
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(138, 95, 95, 0.1);
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.login-form button {
+  background-color: rgba(255, 182, 182, 0.5); /* 50% pink */
+  color: var(--text-dark);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.login-form button:hover {
+  opacity: 0.9;
+}
+
+.auth-text {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.auth-link {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+}

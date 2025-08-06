@@ -1,0 +1,158 @@
+.event-container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.event-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.event-meta {
+  color: #555;
+  margin: 4px 0;
+}
+
+.registered-banner {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004ecc;
+}
+
+.suggestion-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.suggestion-form input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.suggestion-form button {
+  padding: 8px 12px;
+}
+
+.summary-box {
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-left: 4px solid #0066ff;
+}
+
+/* Full-page background */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e0ecff, #f5faff);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Event content card */
+.event-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings and meta */
+.event-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.event-meta {
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Register success box */
+.registered-banner {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 16px 0;
+  font-weight: 500;
+}
+
+/* Buttons */
+button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #004ecc;
+}
+
+/* Suggestion list */
+.suggestion-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+/* Suggestion form */
+.suggestion-form {
+  margin-top: 12px;
+}
+
+.suggestion-form input {
+  width: 70%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px rgba(145, 7, 7, 0.5);
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.suggestion-form button {
+  padding: 8px 16px;
+}
+
+/* AI Summary */
+.summary-box {
+  margin-top: 14px;
+  background-color: #f1f3f5;
+  padding: 14px;
+  border-left: 4px solid #0066ff;
+  border-radius: 4px;
+}
+

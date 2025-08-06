@@ -1,0 +1,103 @@
+.home-container {
+  padding: 30px;
+  background-color: var(--background);
+  min-height: 100vh;
+  color: var(--text);
+}
+
+nav {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav button {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #80a0cd;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+li button {
+  margin-top: 10px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #e25a4f;
+}
+
+/* src/components/Home.css */
+
+.home-container {
+  padding: 20px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  font-size: 1.8em;
+  margin-top: 20px;
+  color: var(--text-color);
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background: var(--card-bg);
+  color: var(--text-color);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(184, 117, 117, 0.1);
+}
+
+button {
+  background: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+

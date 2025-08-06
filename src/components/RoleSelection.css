@@ -1,0 +1,41 @@
+.role-selection-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.role-selection-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.role-selection-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.role-selection-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.role-button {
+  background-color: rgba(255, 182, 182, 0.5); /* ✅ FFB6B6 with 50% opacity */
+  color: var(--text-color);
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.role-button:hover {
+   background-color: #e25a4f;
+  transform: translateY(-2px);
+}

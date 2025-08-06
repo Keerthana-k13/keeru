@@ -1,0 +1,130 @@
+.messaging-container {
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.messaging-container h2 {
+  color: var(--primary);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.messages-box {
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  min-height: 300px;
+  padding: 12px;
+  background-color: var(--card-bg);
+  overflow-y: auto;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: rgba(255, 182, 182, 0.4);
+  color: var(--text-color);
+  max-width: 80%;
+}
+
+.message.sent {
+  background-color: var(--accent);
+  color: var(--text-dark);
+  margin-left: auto;
+}
+
+.message.received {
+  background-color: rgba(255, 182, 182, 0.7);
+  color: var(--text-dark);
+  margin-right: auto;
+}
+
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #ffc2c2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 8px;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.timestamp {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 4px;
+}
+
+.typing-indicator {
+  font-style: italic;
+  margin-top: 6px;
+  margin-left: 10px;
+  color: var(--text-color);
+}
+
+.message-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: var(--surface-light);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme='dark'] .message-form input {
+  background-color: #3f3d56;
+  color: var(--text-light);
+  border: 1px solid #555;
+}
+
+.message-form button {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-form button:hover {
+  background-color: #7381ac;
+}
+
+.emoji-toggle {
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.emoji-picker-container {
+  position: absolute;
+  z-index: 10;
+}
