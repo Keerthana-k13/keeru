@@ -14,6 +14,10 @@ class UserCreateView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
+class UserDetailView(generics.RetrieveAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
 from django.http import HttpResponse
 from reportlab.pdfgen import canvas
 from .models import User, Certificate

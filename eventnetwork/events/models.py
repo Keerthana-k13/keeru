@@ -16,6 +16,10 @@ class Event(models.Model):
         related_name='organized_events'
     )
     image = models.ImageField(upload_to='events/', null=True, blank=True)
+    google_form_url = models.URLField(blank=True, null=True)
+    
+    def __str__(self):
+        return self.title
 
 class Registration(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
@@ -24,7 +28,9 @@ class Registration(models.Model):
         on_delete=models.CASCADE
     )
     registered_at = models.DateTimeField(auto_now_add=True)
-    google_form_url = models.URLField()
+    
+    def __str__(self):
+        return f"{self.event.title}"
 
 class Suggestion(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
@@ -34,3 +40,6 @@ class Suggestion(models.Model):
     )
     suggestion = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return f"{self.event.title}"

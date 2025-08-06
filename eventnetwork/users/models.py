@@ -9,9 +9,15 @@ class User(AbstractUser):
     )
     role = models.CharField(max_length=20, choices=ROLE_CHOICES)
     profile_picture = models.ImageField(upload_to='profiles/', null=True, blank=True)
+    
+    def __str__(self):
+        return f"{self.username} ({self.role})"
 
 class Certificate(models.Model):
     user = models.ForeignKey('User', on_delete=models.CASCADE)
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
     file = models.FileField(upload_to='certificates/')
     uploaded_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return f"{self.event.title}"
